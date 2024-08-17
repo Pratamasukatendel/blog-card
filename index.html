@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: "Figtree ExtraBold";
+        src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Figtree SemiBold";
+        src: url("assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Figtree Italic";
+        src: url("assets/fonts/static/Figtree-Italic-VariableFont_wght.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: "Figtree Variable";
+        src: url("assets/fonts/static/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: #f4d04e;
+        /* background: #000; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .card {
+        width: 384px;
+        height: min-content;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 8px 8px 0 #000;
+      }
+      .blog-image {
+        width: 336px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 24px;
+      }
+      .blog-image1 {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        object-fit: cover;
+      }
+      .content {
+        width: 336px;
+        height: auto;
+        margin: 24px;
+        border: 1px #f4d04e solid;
+      }
+      .category {
+        width: min-content;
+        height: min-content;
+        background: #f4d04e;
+        font-size: 14px;
+        font-family: "Figtree ExtraBold", sans-serif;
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+      }
+      .publish-date {
+        font-size: 14px;
+        font-family: "Figtree Variable", sans-serif;
+        margin-bottom: 12px;
+      }
+      .title {
+        font-size: 24px;
+        font-family: "Figtree ExtraBold", sans-serif;
+        color: #f4d04e;
+        margin-bottom: 12px;
+      }
+      .description {
+        font-size: 16px;
+        font-family: "Figtree Variable", sans-serif;
+      }
+      .author {
+        margin: 24px;
+        display: flex;
+        align-items: center;
+        font-display: row;
+      }
+      .author img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+      .author-name {
+        font-size: 14px;
+        font-family: "Figtree ExtraBold", sans-serif;
+      }
+      .attribution {
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="blog-image">
+        <img
+          class="blog-image1"
+          src="assets/images/illustration-article.svg"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <div class="category">Learning</div>
+        <p class="publish-date">Published 15 Agustus 2024</p>
+        <h1 class="title">HTML & CSS foundations</h1>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="author">
+        <img src="assets/images/image-avatar.webp" alt="" />
+        <p class="author-name">Greg Hooper</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Elpratama</a>.
+    </div>
+  </body>
+</html>
